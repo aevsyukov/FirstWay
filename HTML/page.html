@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<!-- <meta charset=utf-8>-->
+<html>
+<head>
+<title></title>
+<script>
+function changeName(){
+  var yourName = document.getElementById("name1").value
+  if (yourName!="") 
+    head2.innerHTML="Привет, "+yourName+"!"
+}
+</script>
+<!--Стиль текста-->
+<style>
+  .head {
+  font: 24px/0 Arial;
+  color: green
+  }
+</style>
+</head>
+<body>
+<form action="">
+<h1 class="head" id="head2">Привет, друг!</h1>
+<input type="text" id="name1" name="Ваше имя" value="" />
+<br><input type="button" value="Изменить приветствие" onclick=changeName() />
+<p><a href="index.html"><<На главную</a>
+</form>
+</body>
+</html> 
